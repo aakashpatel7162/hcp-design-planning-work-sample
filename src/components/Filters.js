@@ -65,7 +65,7 @@ const Filters = ({ devices, setFilteredDevices }) => {
     max="72" 
     value={selectedStorage / 1024} 
     onChange={(e) => setSelectedStorage(Number(e.target.value) * 1024)} 
-    step="1"
+    step="0"
     className="filter-slider"
   />
   <span>{selectedStorage / 1024} TB</span> 

@@ -11,6 +11,8 @@ const TableList = ({ filteredDevices }) => {
       <table>
         <thead>
           <tr>
+          <th>Qt</th>
+
             <th>Model</th>
             <th>RAM</th>
             <th>HDD</th>
@@ -22,6 +24,8 @@ const TableList = ({ filteredDevices }) => {
           {filteredDevices.length > 0 ? (
             filteredDevices.map((device, index) => (
               <tr key={index}>
+                                <td>{index+1}</td>
+
                 <td>{device.Model}</td>
                 <td>{device.RAM}</td>
                 <td>{device.HDD}</td>
